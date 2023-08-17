@@ -1,0 +1,335 @@
+
+
+
+:root{
+    scroll-behavior: smooth;
+}
+/*container-----------------------------------------*/
+.container{
+    display: grid;
+    grid-template-areas: 
+    'head'
+    'nav'
+    'main'
+    'aside'
+    'footer';
+    font-family:sans-serif;
+    font-size: large;
+    
+}
+
+/*container-----------------------------------------*/
+
+/*head-----------------------------------------*/
+.head{
+    grid-area: head;
+   background-color: rgb(110, 108, 199);
+   
+}
+.hc1{
+    display: flex;
+ justify-content: center;
+ align-items: center;
+ background-image: url(./img/1400px-Hubert_van_Eyck_004.jpg);
+ background-size: cover;
+ background-attachment: fixed;
+background-position: top;
+}
+.hc1c1{
+     margin: 30% auto;
+   color: #fff;
+   text-align: center;
+}
+.hc1c1 .h1{
+    font-size: 3rem;
+  
+}
+.hc1c1 .p {
+    font-size: 1rem;
+}
+/*head-----------------------------------------*/
+
+/*nav-----------------------------------------*/
+.nav{
+    grid-area: nav;
+    background-color: rgb(255, 255, 255);
+      position: sticky;
+   top: 0;
+}
+.nc1{
+    display: flex;
+    flex-direction: row;
+   justify-content: space-around;
+ 
+}
+.na{
+    text-decoration: none;
+    color: black;
+}
+
+/*nav-----------------------------------------*/
+
+
+/*main-----------------------------------------*/
+.main{
+    grid-area: main;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10%;
+}
+.section1,.section2,.section3,.section4{
+    margin-top: 20vh;
+}
+.s1c1{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+.s1c2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.s1c2imgc,.s1c2p1{
+    width: 100%;
+}
+.s1c2img1{
+    width: 100%;
+}
+.s2c1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    border: 1px solid black;
+   text-align: center;
+   margin-bottom: 10%;
+}
+.s2img1c,.s2img1,.s2p1,.s2butt1{
+    width: 100%;
+}
+.s2c1c{
+    display: flex;
+    flex-direction: column;
+}
+.buttons{
+    display: none;
+    position: fixed;
+    bottom: 5vh;
+    right: 5%;
+   background-color: #fff;
+    border-radius: 50%;
+  padding: 2%;
+}
+.goup{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    
+
+}
+.section3{
+padding: 2%;
+
+}
+.s4c1{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+.s4imgc{
+    width: 100%;
+}
+.s4c1img{
+    width: 100%;
+}
+
+/*main-----------------------------------------*/
+
+/*aside-----------------------------------------*/
+.aside{
+    display: none;
+    grid-area: aside;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10%;
+}
+.ac1{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+justify-content: center;
+}
+.ac1c1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+padding: 5px;
+background-color: whitesmoke;
+align-items: flex-end;
+margin-top: 30%;
+}
+.ac1c1imgc{
+    width: 100%;
+}
+.ac1c1img{
+width: 100%;
+}
+.ac1c1p1{
+    margin-left: 5%;
+}
+.ac1c1butt1{
+    width: 30%;
+    margin-bottom: 4%;
+    margin-right: 4%;
+}
+.ac1c2{
+    margin-top: 30%;
+    margin-left: 5%;
+}
+.ac1c3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    margin-top: 30%;
+    margin-left: 5%;
+}
+.tab{
+    margin: 30%;
+}
+
+/*aside-----------------------------------------*/
+
+/*footer-----------------------------------------*/
+.footer{
+    grid-area: footer;
+    background-color: rgb(59, 59, 59);
+    color: #fff;
+}
+.fc1c1c1{
+    display: flex;   
+flex-direction: row;
+flex-wrap: wrap;
+margin-left: 5%;
+}
+.appicon{
+    border: 1px solid white;
+    padding: 2%;
+    margin: 2%;
+    width: 30%;
+    text-align: center;
+}
+.fc1c2h2{
+    margin-left: 5%;
+}
+
+
+.fc1c2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   margin-top: 5%;
+   margin-bottom: 5%;
+}
+.fc1c2box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     padding: 4%;
+    
+}
+.fabox{
+    display: flex;
+    flex-direction: column;
+}
+.fboxh2{
+    margin: auto;
+}
+
+.fc1c2 a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.fe{
+    margin-left: 5%;
+}
+/*footer-----------------------------------------*/
+
+
+/*media min769-----------------------------------------*/
+@media only screen and (min-width:769px) {
+    .container{
+        display: grid;
+        grid-template-areas: 
+        'head head head head'
+        'nav nav nav nav'
+        'main main main aside'
+        'footer footer footer footer';
+    }
+ .aside{
+    display: block;
+ }
+ .hc1c1{
+    margin: 14.5% auto;
+  color: #fff;
+  text-align: center;
+}
+.hc1c1 .h1{
+   font-size: 6rem;
+ 
+}
+.hc1c1 .p {
+   font-size: 2rem;
+}
+.nav{
+    font-size: 1.4rem ;
+}
+.s1c2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.s1c2imgc,.s1c2p1{
+    width: 50%;
+}
+.s1c2p1{
+    margin-left: 4%;
+}
+.s2c1c{
+    display: flex;
+    flex-direction: row;
+}
+.s2c1{
+    width: 30%;
+}
+
+.fc1c1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+.fc1c1c1{
+    display: flex;   
+flex-direction: row;
+flex-wrap: nowrap;
+margin-right: 5%;
+}
+.appicon{
+    border: 1px solid white;
+    padding: 2%;
+    margin: 2%;
+    width: 30%;
+}
+.s3c1{
+    padding: 2%;
+    width: 80%;
+    margin: auto;
+    }
+    .s4c1{
+        width: 40%;
+    }
+}
